@@ -1,5 +1,5 @@
 # HadoopIBMCertificationProject
-Project to fulfill requirements for IBM Certification in Hadoop.  Analyzes Medicare plan data using Pig and Hive.  Pig is used to scrub the data.  Hive then access these scrubbed databases and performs various queries, such as listing plans by county, organization, whether they offer free ambulance service, whether they offer diabetes and mental health options, etc.
+Project to fulfill requirements for IBM Certification in Hadoop.  Analyzes Medicare plan data using Pig and Hive.  Pig is used to scrub the data.  Hive then accesses these scrubbed databases and performs various queries, such as listing plans by county, organization, whether they offer free ambulance service, whether they offer diabetes and mental health options, etc.
 
 For the results, the first 100 lines were extracted due to some results being
 quite large.

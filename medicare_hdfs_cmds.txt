@@ -1,0 +1,7 @@
+/* These are the commands used to copy the 3 medicare files to HDFS */
+
+hadoop dfs -mkdir /medicare
+hadoop dfs -copyFromLocal PlanInfoCounty_FipsCodeLessThan30000.csv /medicare/County1.csv
+hadoop dfs -copyFromLocal PlanInfoCounty_FipsCodeMoreThan30000.csv /medicare/County2.csv
+hadoop dfs -copyFromLocal vwPlanServices.csv /medicare/vwPlanServices.csv
+

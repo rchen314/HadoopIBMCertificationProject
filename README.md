@@ -1,47 +1,34 @@
-# HadoopFinalAssignmentHealth2
-Final Project for Dezyre class -- contains Hive, Pig, and MapReduce scripts processing data from 2011 Medicare database.
+# HadoopIBMCertificationProject
+Project to fulfill requirements for IBM Certification in Hadoop.  Analyzes Medicare plan data using Pig and Hive.  Pig is used to scrub the data.  Hive then accesses these scrubbed databases and performs various queries, such as listing plans by county, organization, whether they offer free ambulance service, whether they offer diabetes and mental health options, etc.
 
+For the results, the first 100 lines from the query results were extracted.
+ 
 List of files:
 
-   inpatient_small.csv                    Sample of dataset used
+   README.md                This file
 
-   Robert Chen Final Explanation.pdf      More detailed explanation of project
+   medicare_hdfs_cmds.txt   The Hadoop HDFS commands used for setup.
 
-   mapreduce/
+   medicare_pig_cmds.pig    The Pig commands used to scrub the data.
 
-      mapreduce_notes.txt                 Explanation/notes on the mapreduce portion
- 
-      InPatient.java                      Code for finding average cost per procedure
+   medicare_hive_cmds.pig   The Hive commands used to perform the queries.
 
-      InPatientState.java                 Code for finding average cost per state
+   medicare_report.pdf      Formal report required for certification.
 
-      output_by_procedure.txt             Output when running InPatient.java
+   results/
 
-      output_by_state.txt                 Output when running InPatientState.java
+      querybycounty         List plans by county they are offered in.
 
-      InPatient.tar                       Full Eclipse workspace to run InPatient
+      querybyorg            List plans by organization offering it.
 
-      InPatientState.tar                  Full Eclipse workspace to run InPatientState
-      
-      opencsv-2.2.jar                     Custom jar file for processing CSV (see mapreduce_notes.txt)
-      
-      sortProcedure.py                    Python script to sort "output_by_procedure.txt" by cost
-      
-      sortState.py                        Python script to sort "output_by_state.txt" by cost
-      
-      output_by_procedure.txt.sorted      Sorted output -- from most expensive procedure to least
-      
-      output_by_state.txt.sorted          Sorted output -- from most expensive state to least
+      querycopay            List plans for a county from most to least expensive copay.
 
-   pig/
+      querydiabetes         List diabetes options in plans.
 
-      pig_final_assignment.pig            Commands in pig used to run queries and the results
+      queryfreeambulance    List plans w/ free ambulance support.
 
-   hive/
+      querymentalhealth     List mental health options in plans.
 
-      hive_final_assignment.q             Commands in hive used to run queries and the results
-
-      csv_serde-0.9.1.jar                 Custom serde used for processing CSV (see .q file for detals on use)
+      querypremium          List plans for a county from lowest to highest premium.
 
 
-   

@@ -3,7 +3,7 @@ Project to fulfill requirements for IBM Certification in Hadoop.  Analyzes Medic
 
 For the results, the first 100 lines from the query results were extracted.
 
-This project contains the following files:
+List of files:
 
    README.md                This file
 
@@ -22,6 +22,7 @@ This project contains the following files:
       querybyorg            List plans by organization offering it.
 
       querycopay            List plans for a county from most to least expensive copay.
+
       querydiabetes         List diabetes options in plans.
 
       queryfreeambulance    List plans w/ free ambulance support.
